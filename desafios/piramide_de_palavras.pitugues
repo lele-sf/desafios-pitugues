@@ -1,0 +1,20 @@
+# Desafio
+# Desenvolver uma solução em que uma frase retorne em formato de pirâmide.
+
+# Frase:
+frase = "Venha aprender Pituguês na Python Brasil 2025!"
+
+# Deve retornar:
+# "Venha"
+# "Venha aprender"
+# "Venha aprender Pituguês"
+# "Venha aprender Pituguês na"
+# "Venha aprender Pituguês na Python"
+# "Venha aprender Pituguês na Python Brasil"
+# "Venha aprender Pituguês na Python Brasil 2025!"
+
+piramide = []
+
+para cada palavra em frase.dividir(' '):
+    piramide.adicionar(palavra)
+    imprima(piramide.juntar(' '))

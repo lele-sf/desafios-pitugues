@@ -36,6 +36,17 @@ Para explorar a linguagem no terminal sem precisar de um arquivo:
 delegua --dialeto pitugues
 ```
 
+## Bugs encontrados
+
+Bugs e comportamentos inesperados encontrados durante os desafios serão documentados aqui.
+
+| # | Desafio | Descrição | Como reproduzir |
+|---|---------|-----------|-----------------|
+| 1 | Pirâmide de Palavras | Extensão `.pitugues` não detecta o dialeto automaticamente, contrariando a [wiki](https://github.com/DesignLiquido/delegua/wiki/Dialetos#dialetos-por-linha-de-comando) | `delegua arquivo.pitugues` falha, `delegua --dialeto pitugues arquivo.pitugues` funciona |
+| 2 | Pirâmide de Palavras | Hover do VS Code exibe sintaxe do Delégua (`var`) em vez da sintaxe do Pituguês | Passar o mouse sobre `imprima()` em arquivo `.pitugues` |
+| 3 | Pirâmide de Palavras | Extensão "Design Líquido - Linguagens em Português" do VS Code emite falso positivo "variável declarada mas nunca usada" para variáveis usadas dentro de `para cada` | Declarar variável no ambiente global e chamar dentro de um loop `para cada` |
+
+
 ## Referências
 
 - [Repositório original dos desafios](https://github.com/cumbucadev/desafios-pitugues)
