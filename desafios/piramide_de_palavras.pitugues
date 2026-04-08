@@ -13,8 +13,11 @@ frase = "Venha aprender Pituguês na Python Brasil 2025!"
 # "Venha aprender Pituguês na Python Brasil"
 # "Venha aprender Pituguês na Python Brasil 2025!"
 
-piramide = []
 
-para cada palavra em frase.dividir(' '):
-    piramide.adicionar(palavra)
-    imprima(piramide.juntar(' '))
+funcao construir_piramide(frase):
+    piramide = []
+    para cada palavra em frase.dividir(' '):
+        piramide.adicionar(palavra)
+        imprima(piramide.juntar(' '))
+
+construir_piramide(frase)
