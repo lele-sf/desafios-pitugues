@@ -2,7 +2,7 @@
 # Desenvolver uma solução em que uma frase retorne em formato de pirâmide.
 
 # Frase:
-frase = "Venha aprender Pituguês na Python Brasil 2025!"
+# frase = "Venha aprender Pituguês na Python Brasil 2025!"
 
 # Deve retornar:
 # "Venha"
@@ -13,7 +13,9 @@ frase = "Venha aprender Pituguês na Python Brasil 2025!"
 # "Venha aprender Pituguês na Python Brasil"
 # "Venha aprender Pituguês na Python Brasil 2025!"
 
+# -------------------------------- Resolução --------------------------------
 
+frase = "Venha aprender Pituguês na Python Brasil 2025!"
 funcao construir_piramide(frase):
     piramide = []
     para cada palavra em frase.dividir(' '):

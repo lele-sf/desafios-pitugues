@@ -1,0 +1,57 @@
+# Primeiro índice de um caractere
+# Desafio
+# Dado um valor textual e um caractere, retorne o primeiro índice em que o caractere aparece no texto.
+
+# Exemplo:
+
+# frase = "Aprendendo Pituguês resolvendo issues"
+# caractere = "p"
+
+# Resultado:
+
+# A letra 'p' tem sua primeira ocorrência no índice '1'
+# Encontre os índices das letras:
+
+# o
+# r
+# e
+# s
+
+# -------------------------------- Resolução --------------------------------
+
+frase = "Aprendendo Pituguês resolvendo issues"
+caractere = "p"
+
+# funcao encontrar_indice(frase, caractere):
+#     indice = 0
+#     para cada letra em frase:
+#         se letra == caractere:
+#             imprima(f"A letra '{caractere}' tem sua primeira ocorrência no índice '{indice}'")
+#             retorna indice
+#         indice += 1
+#     imprima(f"A letra '{caractere}' não foi encontrada na frase.")
+#     retorna nulo
+
+# Output real:
+# A letra 'p' tem sua primeira ocorrência no índice '1'
+# A letra 'p' não foi encontrada na frase.
+ 
+# Output esperado:
+# A letra 'p' tem sua primeira ocorrência no índice '1'
+
+
+# workaround - versão que funciona usando uma flag de controle para evitar o `retorna` dentro do loop:
+funcao encontrar_indice(frase, caractere):
+    indice = 0
+    encontrado = falso
+    para cada letra em frase:
+        se letra == caractere e encontrado == falso:
+            imprima(f"A letra '{caractere}' tem sua primeira ocorrência no índice '{indice}'")
+            encontrado = verdadeiro
+        indice += 1
+    se encontrado == falso:
+        imprima(f"A letra '{caractere}' não foi encontrada na frase.")
+    retorna nulo
+
+
+encontrar_indice(frase, caractere)
