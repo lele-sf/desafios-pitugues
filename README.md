@@ -55,7 +55,6 @@ Features existentes em Python que poderiam enriquecer o Pituguês, identificadas
 | # | Desafio | Descrição | Referência | Issue |
 |---|---------|-----------|------------|-------|
 | 1 | Primeiro índice de um caractere | Função equivalente ao `enumerate()` do Python para iterar com índice e valor ao mesmo tempo | [enumerate - Python docs](https://www.w3schools.com/python/ref_func_enumerate.asp) | [delegua#1181](https://github.com/DesignLiquido/delegua/issues/1181) |
-| 2 | Primeiro índice de um caractere | Método de texto equivalente ao `str.find()` do Python para encontrar o índice da primeira ocorrência de um caractere | [find - Python docs](https://www.w3schools.com/python/ref_string_find.asp) | [delegua#1182](https://github.com/DesignLiquido/delegua/issues/1182) |
  
 ## Referências
 
