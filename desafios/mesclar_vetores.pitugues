@@ -1,0 +1,32 @@
+# Desafio
+# Mesclar vetores de forma ordenada.
+
+# Exemplo:
+
+vetor1 = [1, 2, 4]
+vetor2 = [1, 3, 4]
+# vetor_final = [1, 1, 2, 3, 4, 4]
+
+# 1° alternativa:
+# vetor_final = vetor1.concatenar(vetor2)
+
+# 2° alternativa:
+vetor_final = vetor1 + vetor2
+
+# 3° alternativa:
+# vetor_final = []
+# vetor_final.estender(vetor1)
+# vetor_final.estender(vetor2)
+
+# 4° alternativa:
+# vetor_final = []
+# para cada item em vetor1:
+#     vetor_final.adicionar(item)
+
+# para cada item em vetor2:
+#     vetor_final.adicionar(item)
+
+imprima(vetor1)                 # [1, 2, 4]
+imprima(vetor2)                 # [1, 3, 4]
+imprima(vetor_final.ordenar())  # [1, 1, 2, 3, 4, 4]
+

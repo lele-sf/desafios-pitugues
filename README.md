@@ -47,6 +47,8 @@ Bugs e comportamentos inesperados encontrados durante os desafios serão documen
 | 3 | Pirâmide de Palavras | Extensão "Design Líquido - Linguagens em Português" do VS Code emite falso positivo "variável declarada mas nunca usada" para variáveis usadas dentro de `para cada` | Declarar variável no ambiente global e chamar dentro de um loop `para cada` | [delegua#1170](https://github.com/DesignLiquido/delegua/issues/1170) |
 | 4 | Primeiro índice de um caractere | `retorna` dentro de `para cada` dentro de uma `funcao` não encerra a função, se comporta como `continue`, fazendo o loop continuar e o código após o loop também executar | Registrado no arquivo [desafios/primeiro_indice.pitugues](desafios/primeiro_indice.pitugues) | [delegua#1180](https://github.com/DesignLiquido/delegua/issues/1180) |
 | 5 | Primeiro índice de um caractere | Operadores de atribuição compostos (`+=`, `-=`, etc.) funcionam mas não estão documentados na [wiki do Pituguês](https://github.com/DesignLiquido/pitugues-docs/wiki/Operadores) | Usar `indice += 1` em qualquer arquivo `.pitugues` funciona, mas a wiki não menciona | [pitugues-docs#5](https://github.com/DesignLiquido/pitugues-docs/issues/5) |
+| 6 | Mesclar vetores de forma ordenada | Operador `+` entre vetores funciona em tempo de execução, mas a extensão do VS Code acusa erro de tipo inválido na atribuição | `vetor_final = vetor1 + vetor2` em que ambos são vetores. O código executa normalmente, mas a IDE exibe: "Atribuição inválida para 'vetor_final': é esperado um vetor de elementos." | [vscode#93](https://github.com/DesignLiquido/vscode/issues/93) |
+
 
 ## Sugestões de features
  
