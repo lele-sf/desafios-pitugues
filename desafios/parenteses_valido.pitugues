@@ -1,0 +1,60 @@
+# Parênteses Válido
+# Desafio
+# Considere um dado do tipo texto simbolos que pode conter os caracteres (, ), [, ], { e }, verifique se os parênteses, colchetes ou chaves estão fechados da forma correta.
+
+# Exemplos:
+
+# simbolos = "( )"
+# Deve retornar `verdadeiro`
+
+# simbolos = "{ }"
+# Deve retornar `verdadeiro`
+
+# simbolos = "[)"
+# Deve retornar `falso`
+
+# -------------------------------- Resolução --------------------------------
+funcao parenteses_valido(txt):
+    pilha = []
+    
+    para cada caracter em txt:
+        se caracter em ['(', '[', '{']:
+            pilha.adicionar(caracter)
+        senao se caracter em [')', ']', '}']:
+            se pilha:
+                topo = pilha[-1]
+                se (
+                    topo == '(' e caracter == ')'
+                    ou topo == '[' e caracter == ']'
+                    ou topo == '{' e caracter == '}'
+                ):
+                    pilha.remover_ultimo()
+                senao:
+                    retorna falso
+            senao:
+                retorna falso
+
+    retorna verdadeiro se tamanho(pilha) == 0 senao falso
+
+# refatorado
+funcao parenteses_valido(txt):
+    pilha = []
+    pares = {')': '(', ']': '[', '}': '{'}
+
+    para cada caracter em txt:
+        se caracter em pares.valores():
+            pilha.adicionar(caracter)
+        senao se caracter em pares:
+            se ! pilha ou pilha[-1] != pares[caracter]:
+                retorna falso
+            pilha.remover_ultimo()
+    retorna ! pilha # retorna nao pilha
+
+
+imprima(parenteses_valido('({[]})')) # output: verdadeiro
+imprima(parenteses_valido('({})'))   # output: verdadeiro
+imprima(parenteses_valido('({[])'))  # output: falso
+imprima(parenteses_valido('[(]'))    # output: falso
+imprima(parenteses_valido('( )'))    # output: verdadeiro
+imprima(parenteses_valido('abc'))    # output: verdadeiro
+

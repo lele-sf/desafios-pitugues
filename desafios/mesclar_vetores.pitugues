@@ -7,6 +7,8 @@ vetor1 = [1, 2, 4]
 vetor2 = [1, 3, 4]
 # vetor_final = [1, 1, 2, 3, 4, 4]
 
+# -------------------------------- Resolução --------------------------------
+
 # 1° alternativa:
 # vetor_final = vetor1.concatenar(vetor2)
 

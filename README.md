@@ -48,15 +48,16 @@ Bugs e comportamentos inesperados encontrados durante os desafios serão documen
 | 4 | Primeiro índice de um caractere | `retorna` dentro de `para cada` dentro de uma `funcao` não encerra a função, se comporta como `continue`, fazendo o loop continuar e o código após o loop também executar | Registrado no arquivo [desafios/primeiro_indice.pitugues](desafios/primeiro_indice.pitugues) | [delegua#1180](https://github.com/DesignLiquido/delegua/issues/1180) |
 | 5 | Primeiro índice de um caractere | Operadores de atribuição compostos (`+=`, `-=`, etc.) funcionam mas não estão documentados na [wiki do Pituguês](https://github.com/DesignLiquido/pitugues-docs/wiki/Operadores) | Usar `indice += 1` em qualquer arquivo `.pitugues` funciona, mas a wiki não menciona | [pitugues-docs#5](https://github.com/DesignLiquido/pitugues-docs/issues/5) |
 | 6 | Mesclar vetores de forma ordenada | Operador `+` entre vetores funciona em tempo de execução, mas a extensão do VS Code acusa erro de tipo inválido na atribuição | `vetor_final = vetor1 + vetor2` em que ambos são vetores. O código executa normalmente, mas a IDE exibe: "Atribuição inválida para 'vetor_final': é esperado um vetor de elementos." | [vscode#93](https://github.com/DesignLiquido/vscode/issues/93) |
-
+| 7 | Parênteses Válido | Inconsistência na coerção booleana (*truthiness*) de listas vazias usando o operador `!`. Dentro de condicionais (`se ! pilha`) ela é avaliada como falsa, mas na instrução de retorno (`retorna ! pilha`), é avaliada como um objeto existente (verdadeira). | Criar uma função que execute `retorna ! pilha` com a lista vazia. O retorno gerado será `falso` em vez de `verdadeiro`. | [delegua#1344](https://github.com/DesignLiquido/delegua/issues/1344) |
 
 ## Sugestões de features
  
 Features existentes em Python que poderiam enriquecer o Pituguês, identificadas durante os desafios.
- 
+
 | # | Desafio | Descrição | Referência | Issue |
 |---|---------|-----------|------------|-------|
-| 1 | Primeiro índice de um caractere | Função equivalente ao `enumerate()` do Python para iterar com índice e valor ao mesmo tempo | [enumerate - Python docs](https://www.w3schools.com/python/ref_func_enumerate.asp) | [delegua#1181](https://github.com/DesignLiquido/delegua/issues/1181) |
+| 1 | Primeiro índice de um caractere | Função equivalente ao `enumerate()` do Python para iterar com índice e valor ao mesmo tempo | [enumerate - w3schools docs](https://www.w3schools.com/python/ref_func_enumerate.asp) | [delegua#1181](https://github.com/DesignLiquido/delegua/issues/1181) |
+| 2 | Parênteses Válido | Implementação e suporte da palavra-chave `nao` como operador unário por extenso de negação lógica (equivalente ao `not` do Python). Atualmente apenas o símbolo `!` é suportado. | [not operator - w3schools docs](https://www.w3schools.com/python/ref_keyword_not.asp) | [delegua#1343](https://github.com/DesignLiquido/delegua/issues/1343) |
  
 ## Referências
 
